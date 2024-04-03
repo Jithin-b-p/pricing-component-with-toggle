@@ -12,7 +12,24 @@
     <!--holding the main content -->
     <main class="main">
       <h1 class="main-heading">Our Pricing</h1>
-      <!-- TD: accessible toggle button -->
+      <!-- accessible toggle button -->
+      <fieldset>
+        <legend class="sr-only">pricing details</legend>
+
+        <div class="pricing-toggle">
+          <label for="annually">Annually</label>
+
+          <span class="pricing-toggle__wrapper">
+            <input type="radio" name="pricing" id="annually" />
+            <input type="radio" name="pricing" id="monthly" />
+            <span aria-hidden="true" class="pricing-toggle__background"></span>
+
+            <span aria-hidden="true" class="pricing-toggle__switcher"></span>
+          </span>
+
+          <label for="monthly">Monthly</label>
+        </div>
+      </fieldset>
 
       <!-- pricing section -->
       <section class="pricecards">
