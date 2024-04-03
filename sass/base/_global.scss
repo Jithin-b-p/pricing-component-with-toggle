@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/MontserratBold.woff2") format("woff2"),
@@ -8,4 +10,13 @@
 
 body {
   font-family: var(--ff-primary);
+}
+
+.main {
+  min-height: inherit;
+
+  @include flex-center(column);
+
+  background: right top no-repeat url("../../public/images/bg-top.svg"),
+    left bottom no-repeat url("../../public/images/bg-bottom.svg");
 }
