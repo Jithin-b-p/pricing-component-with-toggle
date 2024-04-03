@@ -2,4 +2,19 @@
 
 .pricecards {
   display: flex;
+
+  &-basic__heading,
+  &-master__heading {
+    color: hsl(var(--clr-neutral-200));
+  }
+
+  &-basic__price,
+  &-master__price {
+    color: hsl(var(--clr-neutral-100));
+  }
+
+  &-basic__details,
+  &-master__details {
+    color: hsl(var(--clr-neutral-200));
+  }
 }
