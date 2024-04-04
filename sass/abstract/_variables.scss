@@ -10,15 +10,17 @@
   --clr-neutral-300: 234 14% 74%;
   --clr-neutral-400: 240 78% 98%;
 
+  --clr-primary-100: 237 63% 64%;
+  --clr-primary-200: 236 72% 79%;
   --gradient-toright: linear-gradient(
     to right,
-    hsl(236, 72%, 79%),
-    hsl(237, 63%, 64%)
+    hsl(var(--clr-primary-200)),
+    hsl(var(--clr-primary-100))
   );
 
   --gradient-diagonal: linear-gradient(
-    45deg,
-    hsl(236, 72%, 79%),
-    hsl(237, 63%, 64%)
+    -45deg,
+    hsl(var(--clr-primary-100)),
+    hsl(var(--clr-primary-200))
   );
 }

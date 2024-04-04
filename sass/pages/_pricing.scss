@@ -2,6 +2,15 @@
 
 .pricecards {
   display: flex;
+  text-align: center;
+
+  &-basic__price,
+  &-master__price,
+  &-professional__price {
+    display: flex;
+    align-items: center;
+    margin-block-start: 0.3rem;
+  }
 
   &-basic__heading,
   &-master__heading {
@@ -15,6 +24,56 @@
 
   &-basic__details,
   &-master__details {
-    color: hsl(var(--clr-neutral-200));
+    &--btn {
+      color: #fff;
+      background-image: var(--gradient-toright);
+    }
+  }
+
+  &-professional__details {
+    --color: #ffffff74;
+    &--btn {
+      color: hsl(var(--clr-primary-100));
+    }
+  }
+
+  &-basic__details,
+  &-master__details,
+  &-professional__details {
+    margin-block-start: 1rem;
+    li {
+      padding-block: 0.5rem;
+      border-bottom: 1px solid var(--color, hsl(var(--clr-neutral-300)));
+    }
+
+    li:first-of-type {
+      border-top: 1px solid var(--color, hsl(var(--clr-neutral-300)));
+    }
+  }
+
+  &-basic,
+  &-master,
+  &-professional {
+    border-radius: 0.5rem;
+  }
+
+  &-basic,
+  &-master {
+    padding: 2.5rem 1.8rem;
+    background-color: #fff;
+    margin-block: 1.5rem;
+
+    box-shadow: 0 0.8rem 3rem 0.1rem hsl(var(--clr-primary-200) / 0.4);
+  }
+
+  &-professional {
+    padding: 4rem 1.8rem;
+    background-image: var(--gradient-diagonal);
+    color: #fff;
+  }
+
+  &-btn {
+    width: 100%;
+    margin-block-start: 1.5rem;
   }
 }

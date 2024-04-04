@@ -1,0 +1,22 @@
+.pricecards {
+  &-basic__heading,
+  &-professional__heading,
+  &-master__heading {
+    font-size: 0.9375rem;
+  }
+  &-basic__price,
+  &-professional__price,
+  &-master__price {
+    font-size: 4.5rem;
+  }
+  &-basic__details,
+  &-professional__details,
+  &-master__details {
+    font-size: 0.9375rem;
+  }
+}
+
+.pricecard-price::before {
+  content: "$";
+  font-size: 2.5rem;
+}

@@ -19,7 +19,7 @@ body {
 
   background: right top no-repeat url("../../public/images/bg-top.svg"),
     left bottom no-repeat url("../../public/images/bg-bottom.svg");
-
+  background-color: #f7f7ff;
   &-heading {
     color: hsl(var(--clr-neutral-200));
   }
