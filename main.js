@@ -25,8 +25,6 @@ if (anuallyChecked) {
 }
 
 function handleOnChange(e) {
-  console.log(document.querySelector("[name='pricing']:checked"));
-
   if (e.target.id === "monthly") {
     monthlyPricing();
     radioAnnually.setAttribute("aria-checked", "false");
@@ -37,4 +35,5 @@ function handleOnChange(e) {
     radioMonthly.setAttribute("aria-checked", "false");
   }
 }
+
 radio.forEach((btn) => btn.addEventListener("change", handleOnChange));
