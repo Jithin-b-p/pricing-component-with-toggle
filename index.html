@@ -20,8 +20,14 @@
           <label for="annually">Annually</label>
 
           <span class="pricing-toggle__wrapper">
-            <input type="radio" name="pricing" id="annually" />
-            <input type="radio" name="pricing" id="monthly" />
+            <input
+              role="switch"
+              type="radio"
+              name="pricing"
+              id="annually"
+              checked
+            />
+            <input role="switch" type="radio" name="pricing" id="monthly" />
             <span aria-hidden="true" class="pricing-toggle__background"></span>
 
             <span aria-hidden="true" class="pricing-toggle__switcher"></span>
@@ -37,7 +43,10 @@
         <div class="pricecards-basic">
           <h2 class="pricecards-basic__heading">Basic</h2>
 
-          <span class="pricecard-price pricecards-basic__price">199.99</span>
+          <span
+            id="basic-price"
+            class="pricecard-price pricecards-basic__price"
+          ></span>
 
           <!-- list of plan sepcification -->
           <ul class="pricecards-basic__details">
@@ -56,9 +65,10 @@
         <div class="pricecards-professional pricecards--highlight">
           <h2 class="pricecards-professional__heading">Professional</h2>
 
-          <span class="pricecard-price pricecards-professional__price"
-            >249.99</span
-          >
+          <span
+            id="professional-price"
+            class="pricecard-price pricecards-professional__price"
+          ></span>
 
           <!-- list of plan sepcification -->
           <ul class="pricecards-professional__details">
@@ -85,7 +95,10 @@
         <div class="pricecards-master">
           <h2 class="pricecards-master__heading">Master</h2>
 
-          <span class="pricecard-price pricecards-master__price">399.99</span>
+          <span
+            id="master-price"
+            class="pricecard-price pricecards-master__price"
+          ></span>
 
           <!-- list of plan sepcification -->
           <ul class="pricecards-master__details">

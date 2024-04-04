@@ -7,7 +7,7 @@ fieldset {
   --baseSize: 12px;
 
   label {
-    margin: 0 0.5rem 0;
+    margin: 0 0.8rem 0;
     font-size: calc(var(--baseSize) * 1.5);
     color: hsl(var(--clr-neutral-300));
     cursor: pointer;
@@ -17,7 +17,7 @@ fieldset {
     display: inline-block;
     width: 42%;
     height: 80%;
-    margin-inline-end: -2px;
+    margin-inline-end: -5px;
     opacity: 0;
     position: relative;
     z-index: 1;
@@ -27,8 +27,8 @@ fieldset {
 
 .pricing-toggle__wrapper {
   display: inline-block;
-  width: 7em;
-  height: 3.5em;
+  width: 5.3em;
+  height: 3em;
   font-size: var(--baseSize);
   vertical-align: middle;
 
@@ -45,11 +45,12 @@ fieldset {
   display: block;
 
   position: absolute;
-  top: 2.75px;
-  left: 5px;
+  top: 3.4px;
+  left: 5.3px;
   right: 100%;
-  width: 43%;
-  height: 85%;
+  // width: 43%;
+  height: 80%;
+  aspect-ratio: 1;
 
   border-radius: 50%;
   background-color: hsl(var(--clr-neutral-400));
@@ -72,7 +73,7 @@ fieldset {
 
 #monthly:checked ~ .pricing-toggle__switcher {
   right: 0;
-  left: 52%;
+  left: 48%;
 }
 
 /* support Windows High Contrast Mode. */
