@@ -6,7 +6,7 @@ const radioMonthly = document.getElementById("monthly");
 const basicPriceElement = document.querySelector("#basic-price");
 const professionalPriceElement = document.querySelector("#professional-price");
 const masterPriceElement = document.querySelector("#master-price");
-const anuallyChecked = document.querySelector("[name='pricing']:checked");
+const firstChecked = document.querySelector("[name='pricing']:checked");
 
 function monthlyPricing() {
   basicPriceElement.textContent = "19.99";
@@ -20,8 +20,8 @@ function annualPricing() {
   masterPriceElement.textContent = "399.9";
 }
 
-if (anuallyChecked) {
-  annualPricing();
+if (firstChecked) {
+  monthlyPricing();
 }
 
 function handleOnChange(e) {
