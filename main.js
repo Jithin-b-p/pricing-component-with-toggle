@@ -1,10 +1,12 @@
 import "./sass/style.scss";
 
 const radio = document.querySelectorAll("[name='pricing']");
+const radioAnnually = document.getElementById("annually");
+const radioMonthly = document.getElementById("monthly");
 const basicPriceElement = document.querySelector("#basic-price");
 const professionalPriceElement = document.querySelector("#professional-price");
 const masterPriceElement = document.querySelector("#master-price");
-const anuallyChecked = document.querySelector("[role='switch']:checked");
+const anuallyChecked = document.querySelector("[name='pricing']:checked");
 
 function monthlyPricing() {
   basicPriceElement.textContent = "19.99";
@@ -23,12 +25,16 @@ if (anuallyChecked) {
 }
 
 function handleOnChange(e) {
-  console.log(document.querySelector("[role='switch']:checked"));
+  console.log(document.querySelector("[name='pricing']:checked"));
 
   if (e.target.id === "monthly") {
     monthlyPricing();
+    radioAnnually.setAttribute("aria-checked", "false");
+    radioMonthly.setAttribute("aria-checked", "true");
   } else if (e.target.id === "annually") {
     annualPricing();
+    radioAnnually.setAttribute("aria-checked", "true");
+    radioMonthly.setAttribute("aria-checked", "false");
   }
 }
 radio.forEach((btn) => btn.addEventListener("change", handleOnChange));

@@ -23,6 +23,14 @@ body {
   &-heading {
     color: hsl(var(--clr-neutral-200));
   }
+  padding-block: 3rem;
+
+  @media screen and (max-width: 42em) {
+    padding-block: 4rem;
+    background: right -12.5rem top -2% no-repeat
+      url("../../public/images/bg-top.svg");
+    background-color: #f7f7ff;
+  }
 }
 
 // utility

@@ -21,13 +21,18 @@
 
           <span class="pricing-toggle__wrapper">
             <input
-              role="switch"
               type="radio"
               name="pricing"
               id="annually"
               checked
+              aria-checked="true"
             />
-            <input role="switch" type="radio" name="pricing" id="monthly" />
+            <input
+              type="radio"
+              name="pricing"
+              id="monthly"
+              aria-checked="false"
+            />
             <span aria-hidden="true" class="pricing-toggle__background"></span>
 
             <span aria-hidden="true" class="pricing-toggle__switcher"></span>

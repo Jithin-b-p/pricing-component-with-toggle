@@ -31,13 +31,36 @@
     &--btn {
       color: #fff;
       background-image: var(--gradient-toright);
+
+      &:hover {
+        background-image: none;
+        color: hsl(var(--clr-primary-100));
+        border: 1.2px solid hsl(var(--clr-primary-100));
+      }
+
+      &:focus-visible {
+        outline: 2.5px solid black;
+        outline-offset: 3px;
+      }
     }
   }
 
   &-professional__details {
     --color: #ffffff74;
+
     &--btn {
       color: hsl(var(--clr-primary-100));
+
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 1.2px solid #fff;
+      }
+
+      &:focus-visible {
+        outline: 2.5px solid #fff;
+        outline-offset: 3px;
+      }
     }
   }
 
